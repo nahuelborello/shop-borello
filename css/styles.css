@@ -1,0 +1,449 @@
+/*estilos globales*/
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#8ECAE6; 
+    background-image: url(./../assets/fondo.jpg); 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    
+}
+
+    
+
+/*header*/
+header{
+    background-color: #8ECAE6;
+}
+    header .menu ul{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        
+    }
+    header .menu{
+    
+    }
+    header nav ul .list a{
+        
+        color:white;
+        text-decoration: none;
+        
+        
+        
+    }
+    header nav ul .list{
+        
+        align-items: center;
+        text-align: center;
+        
+        border-radius: 30px;
+        padding: 10px;
+        list-style: none;
+        
+    }
+    header .logo{
+        display: none;
+    }
+    
+    header .list img{
+        width: 100px;
+    }
+    header #btn_menu{
+        display: none;
+    }
+    header label{
+        display: none;
+    }
+    header label:hover{
+        cursor: pointer;
+    }
+    
+
+/*main*/
+
+main{
+    
+    
+    
+}
+.banner{
+    height: 450px;
+    background-image: url(./../assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin:150px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner-text{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+.banner .banner-text a{
+    text-decoration: none;
+    background-color: #FF006E;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 120px;
+    color: white;
+    
+    
+}
+
+    
+    #contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly ;
+        padding: 10px;
+        flex-wrap: wrap;
+        margin: 50px;
+        
+        
+    
+        
+    }
+    .card1{
+        
+        padding: 40px;
+        width: 250px;
+        height: 250px;
+        margin:  0 50px 50px 50px;
+        background-image: url(./../assets/fondo.jpg);
+        background-size: cover;
+        background-position: left;
+        border-radius: 20px 0;
+        overflow: hidden;
+        border-radius: 100px 0;
+        
+        
+        text-align: center;
+    }
+    /*guia*/
+    main #btn{
+        display: none;
+    }
+    main #btn1:hover{
+        cursor: pointer;
+    }
+    main #btn1 lord-icon{
+        position: relative;
+        /* display: flex; */
+        
+    }
+    main .section{
+        position:absolute;
+        background-color: #FF006E;
+        visibility: hidden;
+        width: 90%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        
+    }
+    #btn:checked~.section{
+        visibility: visible;
+    }
+ /* paso a paso */
+    main #btn2{
+        display: none;
+    }
+    main #btn3:hover{
+        cursor: pointer;
+    }
+    main #btn3 lord-icon{
+        position: relative;
+        
+        
+    }
+    #btn2:checked~.section{
+        visibility: visible;
+    }
+    /*envios*/
+    main #btn4{
+        display: none;
+    }
+    main #btn5:hover{
+        cursor: pointer;
+    }
+    main #btn5 lord-icon{
+        position: relative;
+        
+        
+    }
+    #btn4:checked~.section{
+        visibility: visible;
+
+    }
+
+   /*metodos de pago*/
+    main #btn6{
+        display: none;
+    }
+    main #btn7:hover{
+        cursor: pointer;
+    }
+    main #btn7 lord-icon{
+        position: relative;
+        
+        
+    }
+    #btn6:checked~.section{
+        visibility: visible;
+        
+    }
+    /* adaptacion de cada btn-menu */
+    main #btn-menu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 20px;
+        background-color: white;
+        text-align: center;
+        width: 250px ;
+        border-radius:50px ;
+        align-items: center;
+        
+    }        
+#btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+main #btn-menu1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top:100px;
+    background-color: white;
+    text-align: center;
+    width: 250px;
+    margin-left: 20px;
+    border-radius:50px ;
+    align-items: center;    
+}
+#btn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+main #btn-menu2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top:100px ;
+    background-color: white;
+    text-align: center;
+    width: 250px;
+    margin-left: 20px;
+    border-radius:50px;
+    align-items: center;
+}
+#btn5{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+main #btn-menu3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: white;
+    text-align: center;
+    width:250px ;
+    border-radius: 50px;
+    margin-left: 20px;
+    align-items: center;    
+}
+#btn7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div .map{
+    display: flex;
+    padding: 50px;
+    margin: 100px;
+    background-image: url(./../assets/fondo.jpg);
+    
+    
+
+}
+.map-text{
+    background-color: #FF006E;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grilla{
+    background-color: #FF006E;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto ;
+    margin-top: 200px;
+    gap: 5px;
+    
+}
+    
+
+.hijo{
+    
+    
+}
+main .grilla .hijo img{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+
+}
+main .grilla .hijo .text-grid{
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+
+}
+
+
+
+
+/* footer */
+.fixed{
+    position: fixed;
+    width: 70px;
+    bottom: 10px;
+    right: 10px;
+    
+    
+    
+    
+}
+
+
+
+
+/*stilos mobile*/
+    @media screen and (max-width: 768px) and (min-width: 320px){
+        /*header general*/
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav ul .list{
+        
+            align-items: center;
+            text-align: center;
+            background-color: #8ECAE6;
+            border-radius: 30px;
+            padding: 10px;
+            list-style: none;
+            
+        }
+        header .logo{
+            display: block;
+            width: 70px;
+            margin-left: 25px;
+        }
+        header #logo-hidden{
+            display: none;
+        }
+        header #logo-hidden{
+            display: none;
+        }
+        header label{
+            display: block;
+            position: relative;
+            margin-right: 25px;
+        }
+        header label img{
+            width: 50px;
+        }
+        header .menu{
+            position: absolute;
+            top: 70px;
+            background-color: #8ECAE6;
+            visibility: hidden;
+            width: 100vw;
+        }
+        #btn_menu:checked~.menu{
+            visibility: visible;
+        }
+        .menu ul{
+            flex-direction: column;
+        }
+
+        
+
+
+        /*main index*/
+        
+        
+        main .banner{
+            
+            margin: 100px 20px 20px 20px;
+            height: 250px;
+        }
+
+        /*main productos*/
+        
+        .grilla{
+            background-color: #FF006E;
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto auto auto ;
+            margin-top: 200px;
+            gap: 5px;
+            
+            
+        }
+        .hijo{
+
+            
+            
+        }
+        }
+        main .grilla .hijo img{
+            height: 90%;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            
+        }  
+ 
+
